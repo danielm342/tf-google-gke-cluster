@@ -29,8 +29,8 @@ resource "google_compute_instance" "my_instance" {
   }
 
   labels = {
-    environment = "production"
-    service = "web-app"
+    service = "web-app" 
+    environment = "production"  
   }
 }
 
@@ -40,7 +40,7 @@ resource "google_cloudfunctions_function" "my_function" {
   available_memory_mb = 512
 
   labels = {
-    environment = "Prod"
-    service = "web-app"
+    service = "web-app"  
+    environment = "production" 
   }
 }
