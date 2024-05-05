@@ -30,7 +30,7 @@ resource "google_compute_instance" "my_instance" {
 
   labels = {
     service = "web-app" 
-    environment = "production"  
+    environment = "Prod"  
   }
 }
 
@@ -41,6 +41,6 @@ resource "google_cloudfunctions_function" "my_function" {
 
   labels = {
     service = "web-app"  
-    environment = "production" 
+    environment = "Prod" 
   }
 }
